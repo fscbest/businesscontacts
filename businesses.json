@@ -1,0 +1,62 @@
+{
+  "0":
+	{"category":"Retail",
+	 "city":"Milwaukee",
+	 "company":"JumpXS",
+	 "description":"Fjhgjh lkjnlksjd kljhnklj",
+	 "email":"hjhj@gmail.com",
+	 "phone":"46456546",
+	 "state":"Wisconsis",
+	 "street_address":"856 Sheridan",
+	 "years_in_business":7,
+	 "zipcode":"53234"
+	},
+	"1":
+	{"category":"IT",
+	 "city":"Milwaukee 1",
+	 "company":"Lazz",
+	 "description":"Fjhgjh lkjnlksjd kljhnklj",
+	 "email":"hjhj11@gmail.com",
+	 "phone":"46456546",
+	 "state":"Wisconsis",
+	 "street_address":"856 Sheridan",
+	 "years_in_business":9,
+	 "zipcode":"53234"
+	},
+	"2":
+	{"category":"Retail",
+	 "city":"Milwaukee",
+	 "company":"JumpXS",
+	 "description":"Fjhgjh lkjnlksjd kljhnklj",
+	 "email":"hjhj@gmail.com",
+	 "phone":"46456546",
+	 "state":"Wisconsis",
+	 "street_address":"856 Sheridan",
+	 "years_in_business":7,
+	 "zipcode":"53234"
+	},
+	"3":
+	{"category":"Retail",
+	 "city":"Milwaukee",
+	 "company":"JumpXS",
+	 "description":"Fjhgjh lkjnlksjd kljhnklj",
+	 "email":"hjhj@gmail.com",
+	 "phone":"46456546",
+	 "state":"Wisconsis",
+	 "street_address":"856 Sheridan",
+	 "years_in_business":7,
+	 "zipcode":"53234"
+	},
+	"4":
+	{"category":"Retail",
+	 "city":"Milwaukee",
+	 "company":"JumpXS",
+	 "description":"Fjhgjh lkjnlksjd kljhnklj",
+	 "email":"hjhj@gmail.com",
+	 "phone":"46456546",
+	 "state":"Wisconsis",
+	 "street_address":"856 Sheridan",
+	 "years_in_business":7,
+	 "zipcode":"53234"
+	}
+ }
