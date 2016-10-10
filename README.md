@@ -1,3 +1,51 @@
+For Firebase:
+1.  # if you have the wrong cli version only
+    npm uninstall -g angular-cli
+    
+    # reinstall clean version
+    npm install -g angular-cli 
+    
+2.  npm install -g typings 
+    npm install -g typescript
+    
+3.  npm install angularfire2 firebase --save
+4. \src\tsconfig.json :
+   add "files":["../node_modules/firebase/firebase.d.ts"]
+5. \src\typings.d.ts :
+  add /// <reference path="../node_modules/firebase/firebase.d.ts" />
+6.  update /src/app/app.module.ts:
+   1.  import { AngularFireModule } from 'angularfire2';
+   2.  export const firebaseConfig = {
+         apiKey: "AIzaSyC1xzS0eO37ylU_4Eqhtz5X_LZG0BUsGTg",
+         authDomain: "businesscontacts-9c298.firebaseapp.com",
+         databaseURL: "https://businesscontacts-9c298.firebaseio.com",
+         storageBucket: "businesscontacts-9c298.appspot.com",
+         messagingSenderId: "465082239973"
+       };
+   3.  @NgModule({
+         imports: [
+           .....,
+           AngularFireModule.initializeApp(firebaseConfig)
+         ]
+7.  /src/app/app.component.ts
+   1. import { AngularFire, FirebaseListObservable } from 'angularfire2';
+   2. items: FirebaseListObservable<any[]>;
+        constructor(af: AngularFire) {
+          this.items = af.database.list('items');
+        }
+8. /src/app/app.component.html 
+   <ul *ngFor="let item of items | async">
+     <li class="text">
+       {{item.name}}
+     </li>
+   </ul>
+  
+9. ng serve
+10. http://localhost:4200/
+
+
+
+
 # Businesscontacts
 
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.15.
