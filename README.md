@@ -1,18 +1,18 @@
-For Firebase:
-1.  # if you have the wrong cli version only
-    npm uninstall -g angular-cli
+# For Firebase:
+1.  if you have the wrong cli version only
+      `npm uninstall -g angular-cli`
     
-    # reinstall clean version
-    npm install -g angular-cli 
+    reinstall clean version
+      `npm install -g angular-cli` 
     
 2.  npm install -g typings 
     npm install -g typescript
     
 3.  npm install angularfire2 firebase --save
 4. \src\tsconfig.json :
-   add "files":["../node_modules/firebase/firebase.d.ts"]
+   add `"files":["../node_modules/firebase/firebase.d.ts"]`
 5. \src\typings.d.ts :
-  add /// <reference path="../node_modules/firebase/firebase.d.ts" />
+  add `/// <reference path="../node_modules/firebase/firebase.d.ts" />`
 6.  update /src/app/app.module.ts:
    1.  import { AngularFireModule } from 'angularfire2';
    2.  export const firebaseConfig = {
@@ -34,11 +34,11 @@ For Firebase:
           this.items = af.database.list('items');
         }
 8. /src/app/app.component.html 
-   <ul *ngFor="let item of items | async">
+   `<ul *ngFor="let item of items | async">
      <li class="text">
        {{item.name}}
      </li>
-   </ul>
+   </ul>`
   
 9. ng serve
 10. http://localhost:4200/
